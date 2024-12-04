@@ -1,7 +1,7 @@
 /*
 	Student Name: Katie Swanson
 	File Name: script.js
-	Date: 11/15/24
+	Date: 12/4/24
 */
 
 //Global variables
@@ -24,24 +24,7 @@ function hamburger() {
 
 //Function to display the video1 video
 function video1() {
-	videoSource.src = "media/video1.mp4";
-	descriptionSource.src = "media/video1-description.vtt";
+	videoSource.src = "media/aerial-video.mp4";
 	video.style.display = "block";
-	video.load();
-}
-
-//Function to display the video2 video
-function video2() {
-	videoSource.src = "media/video2.mp4";
-	descriptionSource.src = "media/video2-descriptions.vtt";
-	video.style.display = "block";
-	video.load();
-}
-
-//Function to display the video3 video
-function video3() {
-	videoSource.src = "media/video3.mp4";
-	descriptionSource.src = "media/video3-descriptions.vtt";
-	video.style.display = "block"
 	video.load();
 }
