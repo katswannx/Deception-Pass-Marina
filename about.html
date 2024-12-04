@@ -2,7 +2,7 @@
 <!-- This website template was created by: Katie Swanson -->
 <html lang="en">
 <head>
-	<title>History | Deception Pass Marina</title>
+	<title>About | Deception Pass Marina</title>
 	<meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +25,10 @@
 		<!-- Mobile Nav -->
 		<nav class="mobile-nav">
 			<div id="menu-links">
-				<a href="index.html">Home</a>
-				<a href="history.html">History</a>
+				<a href="index.html">Marina</a>
 				<a href="services.html">Services</a>
 				<a href="activities.html">Activities</a>
+				<a href="about.html">About</a>
 				<a href="contact.html">Contact</a>
 			</div>
 			<a class="menu-icon" onclick="hamburger()">
@@ -47,10 +47,10 @@
 		<!-- Tablet, Desktop Nav -->
 		<nav class="tablet-desktop">
 			<ul>
-                <li><a href="index.html">Home</a></li> 
-                <li><a href="history.html">History</a></li> 
+                <li><a href="index.html">Marina</a></li> 
                 <li><a href="services.html">Services</a></li> 
                 <li><a href="activities.html">Activities</a></li> 
+				<li><a href="about.html">About</a></li> 
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 		</nav>
@@ -58,8 +58,8 @@
 		<!-- Use the main area to add the main content of the webpage -->
 		<main id="content">
 			
-			<div class="iframe-container">
-				<iframe src="https://www.youtube.com/embed/Ah4bc6AY4mk?si=tySZNr8YiGRh7ECa" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<div id="hero-center" class="tablet-desktop">
+				<img src="images/history-hero.jpg" alt="Arial view of Deception Pass Marina.">
 			</div>
 			
 			<div class="content-title">
@@ -95,16 +95,20 @@
 				<section id="today" class="tablet-desktop ">
 			
 					<h2>Deception Pass Marina Today</h2>
-					<img src="images/history-today.jpg" alt="Modern arial view photo of Deception Pass Marina.">
+
 					<p>———————————————————————</p>
-					<p>Example text of history and ownership today.<span class="viewex" onclick="video1()"> View Video Placeholder. </span></p>
+					<p>Example text of history and ownership today.</p>
+					<p><span class="viewex" onclick="video1()"> Click for an aerial tour of Deception Pass Marina. </span></p>
 					<p>———————————————————————</p>
 				
 					<video controls id="example">
 						<source id="vid-src" src="vid" type="video/mp4">
-						<track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
 						<p>Your browser does not support the video element.</p>
 					</video>
+					
+					<p>Video credits to <a href="https://www.youtube.com/watch?v=Ah4bc6AY4mk" class="external-link">Oleg Nikitenko</a> on Youtube.</p>
+					
+					<p>———————————————————————</p>
 				
 					<p>For more history of Deception pass and the surrounding area, visit <a href="https://deceptionpassfoundation.org/history-park/" target="_blank" class="external-link">Deception Pass Park Foundation</a>.</p>
 
