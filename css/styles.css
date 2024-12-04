@@ -1,6 +1,6 @@
 /*
 Author: Katie Swanson
-Date: 11/15/24
+Date: 12/4/24
 File Name: styles.css
 */
 
@@ -103,7 +103,7 @@ main .mobile-content, .desktop-content{
 }
 
 .iframe-container { /* Youtube Video Styling */
-	border-top: 20px solid white;
+	border: 10px solid white;
 	float: none;
 	clear: both;
 	width: 100%;
@@ -121,12 +121,26 @@ main .mobile-content, .desktop-content{
     height: 100%;
 }
 
+.mobile h2 {
+	padding-bottom: 5%;
+}
+
 .mobile h3 {
+	padding-top: 5%;
 	text-shadow: 5px 5px 8px #ccc;
 }
 
+.button {
+	padding: 0.5em 2em;
+	margin-left: 30%;
+	text-decoration: none;
+	font-family: "Work Sans", sans-serif;
+	background-color: #111c2f;
+	color: white;
+}
+
 article {
-	padding: 2%;
+	padding: 3%;
 }
 
 article h3 {
@@ -143,7 +157,7 @@ article ul {
 }
 
 article:nth-of-type(2){
-	background-color: #f5fbff;
+	background-color: #e5f3fd;
 }
 
 .tel-link {
@@ -166,7 +180,7 @@ article:nth-of-type(2){
     margin-left: 10%;
 }
 
-.frame{
+.frame, .frame2{
 	position: relative;
 	max-width: 450px;
 	margin: 2% auto;
@@ -177,7 +191,7 @@ article:nth-of-type(2){
 	margin-right: auto;
 }
 
-.pic-text{
+.pic-text {
 	position: absolute;
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.5);
@@ -204,8 +218,20 @@ article:nth-of-type(2){
 	margin-right: auto;
 }
 
-.amenities li {
-	margin: 1em;
+aside {
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	padding: 1em;
+	box-shadow: 5px 5px 8px #111c2f;
+	border-radius: 0 15px;
+	margin-bottom: 2em;
+}
+
+.grid-item4 li {
+	text-align: left;
+	margin-left: 5%;
+	font-weight: normal;
 }
 
 .round {
@@ -319,15 +345,16 @@ footer p a {
     }
     
     /* Tablet Viewport: Style rule for header */
-	header{
+	header {
+		height: 140px;
 		padding: 0;
 		margin: 0;
 	}
 	
-	.header-combo img{
+	.header-combo img {
 		position: relative;
 		width: 100%;
-		height: 165px;
+		height: 140px;
 		padding: 0;
 		margin: 2.5em 0 0 0;
 		background: #111c2f;
@@ -335,10 +362,10 @@ footer p a {
 	
 	.header-combo .logo {
 	  	position: absolute;
-	  	width: 300px;
+	  	width: 250px;
 	  	height: auto;
-	  	left: 10%;
-	  	top: 0;
+	  	left: 14%;
+	  	top: 1%;
 	  	bottom: 0;
 		margin: 0;
 		background: transparent;
@@ -355,7 +382,7 @@ footer p a {
 	}
 	
     nav li {
-		padding: 0.5em;
+		padding: 0.8em;
 	    font-size: 1.1em;
 	    font-family: "Work Sans", sans-serif;
         display: inline-block;
@@ -367,7 +394,7 @@ footer p a {
     }
     
     nav li a {
-        padding: 0.1em 0.75em;
+        padding: 0em 0.35em;
 	    display: block;
 	    color: #fff;
 	    text-decoration: none;
@@ -409,10 +436,6 @@ footer p a {
 	.button {
 		padding: 1em;
 		margin: 3em;
-		text-decoration: none;
-		font-family: "Work Sans", sans-serif;
-		background-color: #111c2f;
-		color: white;
 	}
 	
 	#hero-center img {
@@ -426,6 +449,40 @@ footer p a {
         margin: 0 0 4% 10%;
     }
 	
+	.intro {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+	.intro h2 {
+		font-family: "Playfair Display", serif;
+		color: #2b416a;
+		font-size: 1.7em;
+	}
+	
+	.chart {
+		padding: 5%;
+		font-family: "Work Sans", sans-serif;
+		background-color: #e5f3fd;
+	}
+	
+	.chart p {
+		font-size: 1.15em;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	.chart h2 {
+		padding-left: 5%;
+		font-family: "Playfair Display", serif;
+		color: #2b416a;
+		font-size: 2em;
+	}
+	
+	.chart img {
+		border: 10px solid white;
+	}
+	
 	.grid {
 		display: grid;
 		grid-template-columns: auto auto auto;
@@ -437,16 +494,21 @@ footer p a {
 		padding: 10px;
 	}
 	
+	.pic-text2 {
+		position: absolute;
+		bottom: 0px;
+		background: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		padding: 20px;
+		text-align: left;
+		font-family: "Work Sans", sans-serif;
+		width: 40%;
+	}
+	
 	aside {
-		text-align: center;
 		font-size: 1.25em;
-		font-style: italic;
 		font-weight: bold;
 		padding: 2%;
-		background-color: rgba(204, 204, 204, 0.5);
-		box-shadow: 5px 5px 8px #111c2f;
-		border-radius: 0 15px;
-		margin-bottom: 2em;
 	}
 	
 	.grid-item4 {
@@ -460,9 +522,7 @@ footer p a {
 	}
 	
 	.grid-item4 li {
-		text-align: left;
 		margin-left: 25%;
-		font-weight: normal;
 		list-style-type: none;
 	}
     
@@ -500,7 +560,7 @@ footer p a {
 		float: left;
 		width: 48%;
 		height: 100%;
-		background: #f5fbff;
+		background: #e5f3fd;
 	}
 	
 	.amenities img {
@@ -555,28 +615,6 @@ footer p a {
 		width: 70%;
 		margin: 0 auto;
 	}
-	
-	/* Tablet Viewport: Animation */
-	@-webkit-keyframes text-animation {
-		0% { font-size: 1em; }
-		50% { font-size: 2em; }
-		100% { font-size: 1.35em; }
-	}
-	
-	@keyframes text-animation {
-		0% { font-size: 1em; }
-		50% { font-size: 2em; }
-		100% { font-size: 1.35em; }
-	}
-	
-	figcaption {
-		-webkit-animation-name: text-animation;
-		animation-name: text-animation;
-		-webkit-animation-delay: 3s;
-		animation-delay: 3s;
-		-webkit-animation-duration: 5s;
-		animation-duration: 5s;
-	}
     
 }
 
@@ -590,15 +628,17 @@ footer p a {
     
     /* Desktop Viewport: Style rule for header */
     header {
-        width: 25%;
+		height: 140px;
+        width: 20%;
         float: left;
         padding-bottom: 0;
     }
 	
 	.header-combo .logo {
 		position: static;
-		height: 100%;
-		margin: 1em;
+		height: 120px;
+		width: auto;
+		margin: .7em;
 		float: left;
 		padding-left: 2em;
 	}
@@ -606,8 +646,9 @@ footer p a {
     /* Desktop Viewport: Style rules for nav area */
     nav {
         float: right;
-        width: 70%;
-        margin: 4em 1em 0 0;
+        width: 75%;
+
+        margin: 2em 1em 0 0;
 		background-color: transparent;
     }
 
@@ -620,7 +661,7 @@ footer p a {
     }
 
     nav li a {
-        padding: 0.5em 1em;
+        padding: 0.5em 1.5em;
     }
     
     nav li a:hover {
@@ -666,14 +707,14 @@ footer p a {
 	.crop-container {
 		position: static;
 		width: 1920px;
-		height: 500px;
+		height: 400px;
 		margin-bottom: 8em;
 	}
 	
 	.hero-container img {
 		border-top: 1em solid white;
 		width: 100%;
-		height: 158%;
+		height: 185%;
 		object-fit: cover;
 	}
 	
@@ -717,7 +758,6 @@ footer p a {
 		float: left;
 		width: 33%;
 		height: 100%;
-		background: #f5fbff;
 	}
 	
 	.amenities img {
@@ -749,6 +789,13 @@ footer p a {
     #today {
         clear: left;
     }
+	
+	.pic-text2 {
+		font-size: 1.2em;
+		padding: 2em;
+		width: 400px;
+		bottom: -65%;
+	}
 	
 	.offer:hover {
 		transform: scale(1.25);
